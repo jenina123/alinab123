@@ -84,7 +84,7 @@ header{
     transform: translate(-50%, 50%);
     display: none;
 }
-#stackload{
+#stack{
     position: absolute;
     top: 80%;
     left: 50%;
@@ -131,7 +131,7 @@ header{
 
 
 }
-#noresult{
+#nores{
     
     padding-top: 100px;
     padding-left: 100px;

@@ -27,7 +27,7 @@
         <ul id="result"> </ul>
         <!-- Do some awesome stuff here -->
     </div>
-    <div class="container cat-search" id="stackload" >
+    <div class="container cat-search" id="stack" >
             <img src="./public/img/cat.gif" height="100px" width="150px" id="cat1">
           
         
@@ -71,7 +71,7 @@
                 
                 $("#subbutton").click(function(){
                     $("#trick").show();
-                    $("#stackload").hide();
+                    $("#stack").hide();
                 
                 
                     
@@ -91,7 +91,7 @@
                               
                              items +=`<h1 id="nores">No Results for ${$textField} </h1>`;
                              parsedata.append(items);
-                             $("#stackload").show();
+                             $("#stack").show();
                              $("#trick").hide();
                              
                              return;
