@@ -17,7 +17,7 @@
     <div class="cover">
         <form id="search-form">
             <input id="cat-keyword" type="text" placeholder="Search a cat">
-            <button id="submit-btn">Find a cat</button>
+            <button id="subbutton">Find a cat</button>
         </form>
     </div>
 
@@ -36,7 +36,7 @@
  
     <section>
             <div  >
-                    <ul id="value">
+                    <ul id="fetch">
                         </ul>
             </div>
     </section>
@@ -55,7 +55,7 @@
             // Try to cache your selectors as posible
             // Here's a sample :
             var searchForm = $('#search-form');
-            var parsedata = $('#value');
+            var parsedata = $('#fetch');
             var items = '';
             var sample = $('#cat-keyword').value;
             //These are the variables we need to request from the API
@@ -69,7 +69,7 @@
                 e.preventDefault();
            
                 
-                $("#submit-btn").click(function(){
+                $("#subbutton").click(function(){
                     $("#trick").show();
                     $("#stackload").hide();
                 
@@ -89,7 +89,7 @@
                         var items = "";
                         if(users.length==0){
                               
-                             items +=`<h1 id="noresult">No Results for ${$textField} </h1>`;
+                             items +=`<h1 id="nores">No Results for ${$textField} </h1>`;
                              parsedata.append(items);
                              $("#stackload").show();
                              $("#trick").hide();
